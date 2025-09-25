@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+  </style>
+  <title>Fried Chicken Website</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav-container">
+      <a href="#" class="nav__logo">
+        <img src="images/logo.png" alt="Good Old Fried Chicken Logo">
+        <span>Good Old Fried Chicken</span>
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#menu" class="nav__link">Menu</a></li>
+          <li><a href="#about" class="nav__link">About Us</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="nav__icons">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+        <img src="images/apps.png" alt="Mobile App Icon" class="nav__app-icon">
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title"> Fried Chicken</h1>
+          <p class="home__description">Crispy, Juicy, and Irresistible - Taste the Best Fried Chicken in Town!</p>
+          <a href="#menu" class="button">Explore Our Menu</a>
+          <p class="home__description">Experience the crunch and flavor that made us famous!</p>
+          <a href="#about" class="button">About Golden Fried Chicken</a>
+        </div>
+
+        <div class="home__images">
+          <img src="images/home-img.png" alt="Delicious fried chicken" class="home__img">
+          <img src="images/chicken-dam-1.png" alt="Chicken decoration 1" class="home__dam-1">
+          <img src="images/chicken-dam-2.png" alt="Chicken decoration 2" class="home__dam-2">
+          <img src="images/chicken-dam-3.png" alt="Chicken decoration 3" class="home__dam-3">
+          <img src="images/chicken-dam-4.png" alt="Chicken decoration 4" class="home__dam-4">
+          <img src="images/chicken-dam-5.png" alt="Chicken decoration 5" class="home__dam-5">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container about__container">
+        <h2 class="section__title">About Us</h2>
+        <p class="about__description">
+          Good Old Fried Chicken has been serving crispy, juicy chicken since 1995. Our secret blend of spices and fresh ingredients make every bite unforgettable. We are passionate about quality, flavor, and friendly service.
+        </p>
+        <ul class="about__features">
+          <li>✔ 100% Fresh Ingredients</li>
+          <li>✔ Family-Owned & Operated</li>
+          <li>✔ Fast Delivery & Takeout</li>
+        </ul>
+      </div>
+          <label for="menu-item" class="visually-hidden">Menu Item</label>
+          <select id="menu-item" required>
+            <option value="">Select Menu Item</option>
+            <option value="bucket">Family Bucket</option>
+            <option value="wings">Spicy Wings</option>
+            <option value="tenders">Chicken Tenders</option>
+          </select>
+        <p class="order__description">
+          Craving fried chicken? Place your order online and enjoy our delicious meals at home!
+        </p>
+        <form class="order__form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <label for="order-menu-item" class="visually-hidden">Menu Item</label>
+          <select id="order-menu-item" required>
+            <option value="">Select Menu Item</option>
+            <option value="bucket">Family Bucket</option>
+            <option value="wings">Spicy Wings</option>
+            <option value="tenders">Chicken Tenders</option>
+          </select>
+          <input type="number" placeholder="Quantity" min="1" required>
+          <button type="submit" class="button">Place Order</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu section" id="menu">
+      <div class="container menu__container">
+        <h2 class="section__title">Our Menu</h2>
+        <div class="menu__items">
+          <div class="menu__item">
+            <img src="images/family-bucket.webp" alt="Family Bucket" class="menu__img">
+            <h3 class="menu__name">Family Bucket</h3>
+            <p class="menu__desc">A bucket of 12 crispy fried chicken pieces, perfect for sharing.</p>
+            <span class="menu__price">$19.99</span>
+          </div>
+          <div class="menu__item">
+            <img src="images/spicy-wings.jpg" alt="Spicy Wings" class="menu__img">
+            <h3 class="menu__name">Spicy Wings</h3>
+            <p class="menu__desc">8 hot & spicy wings with our signature sauce.</p>
+            <span class="menu__price">$8.99</span>
+          </div>
+          <div class="menu__item">
+            <img src="images/chicken-tenders.jpg" alt="Chicken Tenders" class="menu__img">
+            <h3 class="menu__name">Chicken Tenders</h3>
+            <p class="menu__desc">6 golden chicken tenders served with dip.</p>
+            <span class="menu__price">$7.49</span>
+          </div>
+          <div class="menu__item">
+            <img src="images/spicy-fries.jpg" alt="Crispy Fries" class="menu__img">
+            <h3 class="menu__name">Chicken Wings</h3>
+            <p class="menu__desc">A large portion of golden, crispy chicken wings.</p>
+            <span class="menu__price">$3.49</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container contact__container">
+        <h2 class="section__title">Contact Us</h2>
+        <p class="contact__description">
+          Have questions or feedback? Reach out to us!
+        </p>
+        <form class="contact__form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="button">Send Message</button>
+        </form>
+        <div class="contact__info">
+          <p><i class="ri-map-pin-line"></i> 123 Chicken Lane, Food City</p>
+          <p><i class="ri-phone-line"></i> (123) 456-7890</p>
+          <p><i class="ri-mail-line"></i> info@goodoldfriedchicken.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Good Old Fried Chicken. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+</html>
